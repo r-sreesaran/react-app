@@ -1,0 +1,6 @@
+sudo:required
+services:
+   - docker
+before_intall:
+   - docker build -t sreesara/react-app -f Dockerfile.dev .
+
