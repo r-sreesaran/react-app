@@ -1,7 +1,9 @@
 sudo: required
+
 services:
    - docker
-before_intall:
+
+before_install:
    - docker build -t sreesaran/react-app -f Dockerfile.dev .
 
 script:
