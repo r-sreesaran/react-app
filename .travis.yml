@@ -4,3 +4,5 @@ services:
 before_intall:
    - docker build -t sreesara/react-app -f Dockerfile.dev .
 
+script:
+   - docker run sreesaran/react-app npm run test -- --coverage
